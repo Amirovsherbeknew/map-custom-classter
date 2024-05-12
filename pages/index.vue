@@ -1,5 +1,8 @@
 <template>
-  <Tutorial/>
+  <div>
+    <GoogleMapClusster/>
+    <Tutorial/>
+  </div>
 </template>
 
 <script>
