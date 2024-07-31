@@ -11,7 +11,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-     
+    script: [
+      {
+        src: 'https://maps.googleapis.com/maps/api/js?callback=initializationCallback&key=AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc',
+        defer: true
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
@@ -25,8 +30,12 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/element-ui',
+<<<<<<< HEAD
     '@/plugins/google-maps',
     '@/plugins/vue-the-mask'
+=======
+    // '@/plugins/google-maps'
+>>>>>>> a6ffebc6aa0857c553231bbcc358f84948aec61d
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,6 +50,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
-    vendor:['vue2-google-maps']
+    // vendor:['vue2-google-maps']
   }
 }

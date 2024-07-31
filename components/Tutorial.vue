@@ -85,7 +85,7 @@ export default {
       const selectedText = range.extractContents();
       
       const span = document.createElement('span');
-      span.style.fontSize = this.fontSize[index];
+      span.style.fontSize = this.fontSize[index];git
       span.appendChild(selectedText);
       
       range.insertNode(span);
